@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth scroll-pt-24">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Configurações Básicas de SEO Local -->
+    <title>Aniquila Pragas | Dedetização e Controle de Pragas em Campo Grande - MS</title>
+    <meta name="description" content="Especialistas em dedetização, desratização e descupinização. Atendimento seguro para residências, escritórios e condomínios. Solicite um orçamento via WhatsApp!">
+    <meta name="keywords" content="dedetização, controle de pragas, desratização, descupinização, aniquila pragas, exterminador, Campo Grande, MS, segurança, tirar baratas">
+    <meta name="author" content="Aniquila Pragas">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Redes Sociais -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Aniquila Pragas | Proteja sua família e seu negócio">
+    <meta property="og:description" content="Serviço de controle de pragas rápido, seguro e eficiente. Orçamento sem compromisso pelo WhatsApp.">
+    <meta property="og:url" content="https://www.aniquilapragas.com.br">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Ícones Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Configuração de Cores do Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#1e3a8a',    // Azul escuro (Confiança/Segurança)
+                            light: '#eff6ff',   // Fundo azul claro
+                            accent: '#f97316',  // Laranja (Ação/Atenção)
+                            hover: '#ea580c',   // Laranja escuro
+                            green: '#25D366'    // Verde WhatsApp
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+        
+        /* Animação do botão do WhatsApp */
+        @keyframes pulse-green {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+        .whatsapp-float {
+            animation: pulse-green 2s infinite;
+        }
+    </style>
+
+    <!-- Schema Markup para SEO Local (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Aniquila Pragas",
+      "image": "URL_DO_SEU_LOGO",
+      "@id": "",
+      "url": "https://www.aniquilapragas.com.br",
+      "telephone": "+5567999999999",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rua Exemplo, 123",
+        "addressLocality": "Campo Grande",
+        "addressRegion": "MS",
+        "postalCode": "79000-000",
+        "addressCountry": "BR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -20.44278,
+        "longitude": -54.64639
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      "priceRange": "$$"
+    }
+    </script>
+</head>
+<body class="font-sans text-gray-800 antialiased selection:bg-brand-accent selection:text-white">
+
+    <!-- Navegação -->
+    <header class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer" onclick="window.scrollTo(0,0)">
+                    <i data-lucide="bug" class="h-8 w-8 text-brand-blue"></i>
+                    <span class="font-bold text-2xl tracking-tight text-brand-blue uppercase">Aniquila<span class="text-brand-accent">Pragas</span></span>
+                </div>
+                
+                <!-- Menu Desktop -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#servicos" class="text-gray-600 hover:text-brand-blue font-medium transition-colors">Serviços</a>
+                    <a href="#locais" class="text-gray-600 hover:text-brand-blue font-medium transition-colors">Locais Atendidos</a>
+                    <a href="#depoimentos" class="text-gray-600 hover:text-brand-blue font-medium transition-colors">Avaliações</a>
+                    <a href="#faq" class="text-gray-600 hover:text-brand-blue font-medium transition-colors">Dúvidas Frequentes</a>
+                </nav>
+
+                <!-- Botão CTA -->
+                <div class="hidden md:flex items-center">
+                    <a href="https://wa.me/5567999999999?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento%20sem%20compromisso." target="_blank" class="bg-brand-accent hover:bg-brand-hover text-white px-6 py-2.5 rounded-full font-bold transition-all shadow-md hover:shadow-lg flex items-center gap-2">
+                        <i data-lucide="message-circle" class="w-5 h-5"></i>
+                        Orçamento Rápido
+                    </a>
+                </div>
+
+                <!-- Menu Mobile Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-brand-blue focus:outline-none">
+                        <i data-lucide="menu" class="h-6 w-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Menu Mobile Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-4 pt-2 pb-4 space-y-1 shadow-lg">
+            <a href="#servicos" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-brand-blue hover:bg-gray-50">Serviços</a>
+            <a href="#locais" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-brand-blue hover:bg-gray-50">Locais Atendidos</a>
+            <a href="#depoimentos" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-brand-blue hover:bg-gray-50">Avaliações</a>
+            <a href="#faq" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-brand-blue hover:bg-gray-50">Dúvidas</a>
+            <a href="https://wa.me/5567999999999?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento%20sem%20compromisso." class="block w-full text-center mt-4 bg-brand-accent text-white px-4 py-3 rounded-md font-bold">Solicitar Orçamento</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 bg-brand-light overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%231e3a8a\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 text-brand-blue font-semibold text-sm mb-6">
+                        <i data-lucide="shield-check" class="w-4 h-4"></i>
+                        Serviço 100% Seguro e Certificado
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight mb-6">
+                        Sua casa ou empresa <span class="text-brand-blue">livre de pragas</span> hoje mesmo.
+                    </h1>
+                    <p class="text-lg sm:text-xl text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0">
+                        Especialistas em controle de baratas, cupins, ratos, formigas e outras pragas. Produtos seguros para sua família e pets. Atendimento rápido em toda a região.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="https://wa.me/5567999999999?text=Gostaria%20de%20agendar%20uma%20visita%20técnica." target="_blank" class="bg-brand-accent hover:bg-brand-hover text-white text-lg px-8 py-4 rounded-full font-bold transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2 transform hover:-translate-y-1">
+                            <i data-lucide="message-square" class="w-6 h-6"></i>
+                            Agendar Visita Gratuita
+                        </a>
+                        <div class="flex items-center justify-center lg:justify-start gap-2 text-gray-500 font-medium mt-4 sm:mt-0 px-4">
+                            <i data-lucide="clock" class="w-5 h-5 text-brand-blue"></i>
+                            Atendimento 24 horas
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Hero Image/Graphic -->
+                <div class="hidden lg:block relative">
+                    <div class="absolute inset-0 bg-brand-blue rounded-full opacity-10 blur-3xl transform scale-110"></div>
+                    <div class="relative bg-white p-8 rounded-3xl shadow-2xl border border-gray-100">
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-gray-50 p-6 rounded-2xl text-center">
+                                <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                                    <i data-lucide="bug-off" class="w-8 h-8 text-brand-blue"></i>
+                                </div>
+                                <h3 class="font-bold text-gray-800">Dedetização</h3>
+                                <p class="text-sm text-gray-500 mt-1">Controle total</p>
+                            </div>
+                            <div class="bg-gray-50 p-6 rounded-2xl text-center">
+                                <div class="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                                    <i data-lucide="home" class="w-8 h-8 text-brand-accent"></i>
+                                </div>
+                                <h3 class="font-bold text-gray-800">Residencial</h3>
+                                <p class="text-sm text-gray-500 mt-1">Seguro para Pets</p>
+                            </div>
+                            <div class="bg-gray-50 p-6 rounded-2xl text-center">
+                                <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                                    <i data-lucide="building-2" class="w-8 h-8 text-green-600"></i>
+                                </div>
+                                <h3 class="font-bold text-gray-800">Comercial</h3>
+                                <p class="text-sm text-gray-500 mt-1">Sem interrupções</p>
+                            </div>
+                            <div class="bg-brand-blue p-6 rounded-2xl text-center text-white flex flex-col justify-center">
+                                <h3 class="font-extrabold text-3xl">10+</h3>
+                                <p class="text-sm text-blue-200 mt-1">Anos de mercado</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços Prestados -->
+    <section id="servicos" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-brand-accent font-bold tracking-wide uppercase text-sm mb-2">Nossas Especialidades</h2>
+                <h3 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">Serviços Completos de Controle de Pragas</h3>
+                <p class="text-gray-600 text-lg">Utilizamos tecnologia de ponta e produtos autorizados pela ANVISA para garantir resultados definitivos.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Serviço 1 -->
+                <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-xl transition-shadow border border-gray-100 group">
+                    <div class="w-14 h-14 bg-brand-light text-brand-blue rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-blue group-hover:text-white transition-colors">
+                        <i data-lucide="bug" class="w-8 h-8"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Dedetização Geral</h4>
+                    <p class="text-gray-600 mb-4">Combate eficaz contra baratas, formigas, aranhas, escorpiões e carrapatos. Tratamento preventivo e corretivo.</p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-accent"></i> Efeito choque e residual</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-accent"></i> Sem manchas nas paredes</li>
+                    </ul>
+                </div>
+
+                <!-- Serviço 2 -->
+                <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-xl transition-shadow border border-gray-100 group">
+                    <div class="w-14 h-14 bg-brand-light text-brand-blue rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-blue group-hover:text-white transition-colors">
+                        <i data-lucide="mouse" class="w-8 h-8"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Desratização</h4>
+                    <p class="text-gray-600 mb-4">Eliminação segura de ratos de telhado, ratazanas e camundongos. Mapeamento de focos e iscas protegidas.</p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-accent"></i> Caixas porta-iscas de segurança</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-accent"></i> Monitoramento contínuo</li>
+                    </ul>
+                </div>
+
+                <!-- Serviço 3 -->
+                <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-xl transition-shadow border border-gray-100 group">
+                    <div class="w-14 h-14 bg-brand-light text-brand-blue rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-blue group-hover:text-white transition-colors">
+                        <i data-lucide="scissors" class="w-8 h-8"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Descupinização</h4>
+                    <p class="text-gray-600 mb-4">Proteja seus móveis e estrutura. Tratamento especializado contra cupins de madeira seca e cupins de solo.</p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-accent"></i> Barreira química protetora</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-accent"></i> Injeção em móveis não destrutiva</li>
+                    </ul>
+                </div>
+                
+                <!-- Serviço 4 -->
+                <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-xl transition-shadow border border-gray-100 group">
+                    <div class="w-14 h-14 bg-brand-light text-brand-blue rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-blue group-hover:text-white transition-colors">
+                        <i data-lucide="bird" class="w-8 h-8"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Manejo de Pombos e Morcegos</h4>
+                    <p class="text-gray-600">Repelência e barreiras físicas para afastar aves e morcegos sem causar danos aos animais, seguindo leis ambientais.</p>
+                </div>
+
+                <!-- Serviço 5 -->
+                <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-xl transition-shadow border border-gray-100 group">
+                    <div class="w-14 h-14 bg-brand-light text-brand-blue rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-blue group-hover:text-white transition-colors">
+                        <i data-lucide="droplets" class="w-8 h-8"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Sanitização de Ambientes</h4>
+                    <p class="text-gray-600">Desinfecção contra vírus, bactérias e fungos. Ideal para clínicas, escolas e residências pós-reformas ou contágios.</p>
+                </div>
+                
+                <!-- Serviço 6 -->
+                <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-xl transition-shadow border border-gray-100 group">
+                    <div class="w-14 h-14 bg-brand-light text-brand-blue rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-blue group-hover:text-white transition-colors">
+                        <i data-lucide="wind" class="w-8 h-8"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Limpeza de Reservatórios</h4>
+                    <p class="text-gray-600">Higienização e impermeabilização de caixas d'água, garantindo a qualidade da água consumida no seu imóvel.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Locais de Atendimento -->
+    <section id="locais" class="py-20 bg-brand-blue text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+                <div class="max-w-2xl">
+                    <h2 class="text-brand-accent font-bold tracking-wide uppercase text-sm mb-2">Onde Atuamos</h2>
+                    <h3 class="text-3xl md:text-4xl font-extrabold mb-4">Soluções sob medida para cada tipo de ambiente</h3>
+                    <p class="text-blue-200 text-lg">Entendemos que uma casa exige cuidados diferentes de uma fábrica ou condomínio. Adaptamos nossos métodos para sua necessidade.</p>
+                </div>
+                <a href="https://wa.me/5567999999999" class="shrink-0 bg-transparent border-2 border-white hover:bg-white hover:text-brand-blue px-6 py-3 rounded-full font-bold transition-colors inline-flex items-center gap-2 self-start md:self-auto">
+                    Solicitar Avaliação <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                </a>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Casa -->
+                <div class="bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/20 hover:bg-white/20 transition-all">
+                    <i data-lucide="home" class="w-12 h-12 text-brand-accent mb-6"></i>
+                    <h4 class="text-2xl font-bold mb-3">Residências</h4>
+                    <p class="text-blue-100 mb-6">Casas e apartamentos. Foco na segurança da sua família, crianças e animais de estimação. Utilizamos gel e produtos sem cheiro sempre que possível.</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-accent shrink-0"></i> Produtos hipoalergênicos</li>
+                        <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-accent shrink-0"></i> Pouco tempo de isolamento do local</li>
+                    </ul>
+                </div>
+
+                <!-- Empresa -->
+                <div class="bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/20 hover:bg-white/20 transition-all">
+                    <i data-lucide="briefcase" class="w-12 h-12 text-brand-accent mb-6"></i>
+                    <h4 class="text-2xl font-bold mb-3">Empresas e Comércio</h4>
+                    <p class="text-blue-100 mb-6">Escritórios, lojas, restaurantes, clínicas e galpões. Atuamos de forma discreta para não interromper a operação do seu negócio.</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-accent shrink-0"></i> Certificado para Vigilância Sanitária</li>
+                        <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-accent shrink-0"></i> Horários flexíveis (noturno/finais de semana)</li>
+                    </ul>
+                </div>
+
+                <!-- Condominios -->
+                <div class="bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/20 hover:bg-white/20 transition-all">
+                    <i data-lucide="building" class="w-12 h-12 text-brand-accent mb-6"></i>
+                    <h4 class="text-2xl font-bold mb-3">Condomínios</h4>
+                    <p class="text-blue-100 mb-6">Áreas comuns, garagens, jardins, lixeiras e poços de elevador. Planos de manutenção preventiva mensal ou trimestral.</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-accent shrink-0"></i> Contratos anuais com desconto</li>
+                        <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-accent shrink-0"></i> Tratamento de rede de esgoto e ralos</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prova Social / Depoimentos -->
+    <section id="depoimentos" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="flex justify-center gap-1 mb-4 text-yellow-400">
+                    <i data-lucide="star" class="w-6 h-6 fill-current"></i>
+                    <i data-lucide="star" class="w-6 h-6 fill-current"></i>
+                    <i data-lucide="star" class="w-6 h-6 fill-current"></i>
+                    <i data-lucide="star" class="w-6 h-6 fill-current"></i>
+                    <i data-lucide="star" class="w-6 h-6 fill-current"></i>
+                </div>
+                <h3 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">Aprovado por quem já testou</h3>
+                <p class="text-gray-600 text-lg">Veja o que nossos clientes dizem sobre os serviços da Aniquila Pragas.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Depoimento 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 relative">
+                    <i data-lucide="quote" class="absolute top-6 right-6 w-10 h-10 text-gray-100"></i>
+                    <p class="text-gray-600 mb-6 relative z-10 italic">"Estava com um problema sério de formigas no meu apartamento e tenho dois gatos. A equipe foi super profissional, usou produtos em gel super seguros. Faz 6 meses e não vi mais nenhuma formiga!"</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-brand-blue font-bold text-xl">MC</div>
+                        <div>
+                            <h5 class="font-bold text-gray-900">Mariana Costa</h5>
+                            <span class="text-sm text-gray-500">Residência - Apartamento</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Depoimento 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 relative">
+                    <i data-lucide="quote" class="absolute top-6 right-6 w-10 h-10 text-gray-100"></i>
+                    <p class="text-gray-600 mb-6 relative z-10 italic">"Contratamos para a dedetização mensal do nosso restaurante. O atendimento fora do horário comercial é perfeito para nós. Fornecem todos os laudos necessários para a vigilância. Recomendo muito."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center text-brand-accent font-bold text-xl">RP</div>
+                        <div>
+                            <h5 class="font-bold text-gray-900">Roberto Pereira</h5>
+                            <span class="text-sm text-gray-500">Dono de Restaurante</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Depoimento 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 relative">
+                    <i data-lucide="quote" class="absolute top-6 right-6 w-10 h-10 text-gray-100"></i>
+                    <p class="text-gray-600 mb-6 relative z-10 italic">"Descobrimos cupins nos armários da cozinha. O técnico da Aniquila fez uma avaliação gratuita, explicou todo o processo e resolveu o problema de forma limpa, sem precisar quebrar nada."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-700 font-bold text-xl">FS</div>
+                        <div>
+                            <h5 class="font-bold text-gray-900">Fernanda Silva</h5>
+                            <span class="text-sm text-gray-500">Residência - Casa</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <p class="text-gray-500 text-sm mb-4">Centenas de clientes satisfeitos em nossa região.</p>
+                <a href="https://wa.me/5567999999999" class="inline-flex items-center gap-2 text-brand-blue font-bold hover:text-brand-accent transition-colors">
+                    Fazer parte dos clientes satisfeitos <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ (Segurança) -->
+    <section id="faq" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <i data-lucide="shield-question" class="w-12 h-12 text-brand-accent mx-auto mb-4"></i>
+                <h3 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">Perguntas Frequentes & Segurança</h3>
+                <p class="text-gray-600 text-lg">Sua segurança e da sua família são nossa prioridade. Tire suas dúvidas abaixo.</p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- Pergunta 1 -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="faq-btn w-full px-6 py-4 text-left bg-gray-50 hover:bg-gray-100 flex justify-between items-center focus:outline-none transition-colors">
+                        <span class="font-bold text-gray-900">Os produtos usados fazem mal para cães, gatos ou crianças?</span>
+                        <i data-lucide="plus" class="w-5 h-5 text-brand-blue transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 py-4 bg-white text-gray-600">
+                        <p>A segurança é total. Trabalhamos com produtos domissanitários regulamentados pela ANVISA, desenvolvidos especificamente para ambientes habitados. Dependendo do serviço (como uso de gel para formigas e baratas), não há necessidade nem de sair do ambiente. Quando usamos pulverização, orientamos o afastamento de pets e crianças pequenas por apenas algumas horas (geralmente 4h a 6h).</p>
+                    </div>
+                </div>
+
+                <!-- Pergunta 2 -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="faq-btn w-full px-6 py-4 text-left bg-gray-50 hover:bg-gray-100 flex justify-between items-center focus:outline-none transition-colors">
+                        <span class="font-bold text-gray-900">Preciso esvaziar os armários para a dedetização?</span>
+                        <i data-lucide="plus" class="w-5 h-5 text-brand-blue transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 py-4 bg-white text-gray-600">
+                        <p>Na maioria dos casos, não! Para controle de baratas e formigas, utilizamos a aplicação em gotas de gel diretamente em frestas, dobradiças e cantos, sem a necessidade de remover utensílios, alimentos ou limpar tudo depois. Em casos específicos de infestação grave que requeira pulverização interna de móveis, o técnico orientará previamente.</p>
+                    </div>
+                </div>
+
+                <!-- Pergunta 3 -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="faq-btn w-full px-6 py-4 text-left bg-gray-50 hover:bg-gray-100 flex justify-between items-center focus:outline-none transition-colors">
+                        <span class="font-bold text-gray-900">Quanto tempo dura o efeito do serviço e tem garantia?</span>
+                        <i data-lucide="plus" class="w-5 h-5 text-brand-blue transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 py-4 bg-white text-gray-600">
+                        <p>Sim, todos os nossos serviços possuem garantia por escrito. A validade da garantia e do efeito residual depende da praga tratada e do ambiente, variando de 3 a 6 meses para insetos rasteiros em residências, até anos no caso de barreiras químicas para cupins de solo. Empresas de alimentação geralmente exigem controle mensal por normas sanitárias.</p>
+                    </div>
+                </div>
+                
+                <!-- Pergunta 4 -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="faq-btn w-full px-6 py-4 text-left bg-gray-50 hover:bg-gray-100 flex justify-between items-center focus:outline-none transition-colors">
+                        <span class="font-bold text-gray-900">O produto tem cheiro forte? Pessoas alérgicas podem ter problemas?</span>
+                        <i data-lucide="plus" class="w-5 h-5 text-brand-blue transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 py-4 bg-white text-gray-600">
+                        <p>Utilizamos preferencialmente produtos microencapsulados que não possuem cheiro forte (muitas vezes inodoros). Para pessoas asmáticas, idosos ou gestantes, tomamos precauções extras e recomendamos um tempo de ausência do local levemente maior para garantir 100% de conforto no retorno, mas os produtos em si não desencadeiam reações alérgicas após a secagem.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 p-6 bg-brand-light rounded-xl border border-blue-100 flex flex-col md:flex-row items-center gap-6">
+                <div class="shrink-0 bg-white px-5 py-3 rounded-lg shadow-sm border border-gray-200 flex items-center justify-center">
+                    <!-- Substituído a imagem quebrada por uma versão em texto estilizado que nunca falha -->
+                    <span class="font-black text-2xl tracking-tighter text-gray-500 opacity-80" style="font-family: Arial, Helvetica, sans-serif;">ANVISA</span>
+                </div>
+                <div>
+                    <h4 class="font-bold text-gray-900">Empresa Certificada</h4>
+                    <p class="text-gray-600 text-sm">Possuímos alvará da Vigilância Sanitária, licença ambiental e responsável técnico (Biólogo/Químico) atuante. Garantia de seriedade no seu atendimento.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Final -->
+    <section class="py-20 bg-gradient-to-br from-brand-blue to-blue-950 text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml,%3Csvg width=\'20\' height=\'20\' viewBox=\'0 0 20 20\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'1\' fill-rule=\'evenodd\'%3E%3Ccircle cx=\'3\' cy=\'3\' r=\'3\'/%3E%3Ccircle cx=\'13\' cy=\'13\' r=\'3\'/%3E%3C/g%3E%3C/svg%3E')]"></div>
+        <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+            <h2 class="text-3xl md:text-5xl font-extrabold mb-6">Pare de conviver com pragas agora mesmo.</h2>
+            <p class="text-xl text-blue-200 mb-10 max-w-2xl mx-auto">Nossa equipe está de prontidão para avaliar seu problema e enviar um orçamento sem compromisso em poucos minutos.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="https://wa.me/5567999999999?text=Olá,%20gostaria%20de%20agendar%20um%20orçamento%20para%20minha%20casa/empresa." target="_blank" class="bg-brand-green hover:bg-green-600 text-white text-lg px-8 py-4 rounded-full font-bold transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-3">
+                    <i data-lucide="message-circle" class="w-7 h-7"></i>
+                    Falar via WhatsApp
+                </a>
+                <a href="tel:+5567999999999" class="bg-white/10 hover:bg-white/20 border border-white/30 text-white text-lg px-8 py-4 rounded-full font-bold transition-all flex items-center justify-center gap-3">
+                    <i data-lucide="phone" class="w-6 h-6"></i>
+                    (67) 99999-9999
+                </a>
+            </div>
+            <p class="mt-6 text-sm text-blue-300">Resposta média em menos de 5 minutos durante horário comercial.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div class="md:col-span-1">
+                    <div class="flex items-center gap-2 mb-4">
+                        <i data-lucide="bug" class="h-6 w-6 text-brand-accent"></i>
+                        <span class="font-bold text-xl tracking-tight text-white uppercase">Aniquila<span class="text-brand-accent">Pragas</span></span>
+                    </div>
+                    <p class="text-sm mb-4">Serviços especializados em controle de pragas urbanas com segurança, tecnologia e respeito ao meio ambiente.</p>
+                    <div class="flex gap-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-bold mb-4">Links Rápidos</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#servicos" class="hover:text-brand-accent transition-colors">Serviços</a></li>
+                        <li><a href="#locais" class="hover:text-brand-accent transition-colors">Onde Atuamos</a></li>
+                        <li><a href="#depoimentos" class="hover:text-brand-accent transition-colors">Avaliações</a></li>
+                        <li><a href="#faq" class="hover:text-brand-accent transition-colors">Dúvidas Frequentes</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-4">Contato</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="map-pin" class="w-4 h-4 mt-1 shrink-0 text-brand-accent"></i>
+                            Rua Exemplo, 123, Bairro Centro, Campo Grande - MS
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="phone" class="w-4 h-4 shrink-0 text-brand-accent"></i>
+                            (67) 3333-3333
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="message-circle" class="w-4 h-4 shrink-0 text-brand-accent"></i>
+                            (67) 99999-9999
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="mail" class="w-4 h-4 shrink-0 text-brand-accent"></i>
+                            contato@aniquilapragas.com.br
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-4">Horário de Atendimento</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex justify-between border-b border-gray-800 pb-1">
+                            <span>Seg - Sex:</span> <span>08:00 - 18:00</span>
+                        </li>
+                        <li class="flex justify-between border-b border-gray-800 pb-1">
+                            <span>Sábados:</span> <span>08:00 - 12:00</span>
+                        </li>
+                        <li class="flex justify-between text-brand-accent pt-1 font-semibold">
+                            <span>Emergências:</span> <span>Plantão 24h</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-center md:text-left">
+                <p>&copy; 2026 Aniquila Pragas. Todos os direitos reservados. CNPJ: 00.000.000/0001-00</p>
+                <div class="flex gap-4 justify-center">
+                    <a href="#" class="hover:text-white">Política de Privacidade</a>
+                    <a href="#" class="hover:text-white">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Flutuante do WhatsApp -->
+    <a href="https://wa.me/5567999999999?text=Olá,%20acessei%20o%20site%20da%20Aniquila%20Pragas%20e%20preciso%20de%20ajuda." target="_blank" class="fixed bottom-6 right-6 z-50 bg-brand-green text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-colors whatsapp-float flex items-center justify-center group" aria-label="Contato pelo WhatsApp">
+        <i data-lucide="message-circle" class="w-8 h-8"></i>
+        <!-- Tooltip -->
+        <span class="absolute right-full mr-4 bg-gray-900 text-white text-sm px-3 py-1.5 rounded-lg whitespace-nowrap opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity">
+            Faça um orçamento!
+        </span>
+    </a>
+
+    <!-- Scripts da Página -->
+    <script>
+        // Inicializa Ícones Lucide
+        lucide.createIcons();
+
+        // Lógica do Menu Mobile
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Fechar menu mobile ao clicar em um link
+        const mobileLinks = menu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+
+        // Lógica do Accordion de FAQ
+        const faqBtns = document.querySelectorAll('.faq-btn');
+        
+        faqBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const content = btn.nextElementSibling;
+                const icon = btn.querySelector('i');
+                
+                // Fecha todos os outros
+                faqBtns.forEach(otherBtn => {
+                    if (otherBtn !== btn) {
+                        otherBtn.nextElementSibling.classList.add('hidden');
+                        otherBtn.querySelector('i').setAttribute('data-lucide', 'plus');
+                        lucide.createIcons();
+                    }
+                });
+                
+                // Toggle o atual
+                content.classList.toggle('hidden');
+                
+                if (content.classList.contains('hidden')) {
+                    icon.setAttribute('data-lucide', 'plus');
+                } else {
+                    icon.setAttribute('data-lucide', 'minus');
+                }
+                lucide.createIcons();
+            });
+        });
+
+        // Efeito de sombra na Navbar ao fazer scroll
+        const header = document.querySelector('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 10) {
+                header.classList.add('shadow-md');
+            } else {
+                header.classList.remove('shadow-md');
+            }
+        });
+    </script>
+</body>
+</html>
